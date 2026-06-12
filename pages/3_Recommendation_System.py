@@ -6,6 +6,25 @@ import ast
 
 st.set_page_config(page_title="Analytic Module")
 
+with st.expander("ℹ️ How does this recommendation system work?"):
+    st.markdown("""
+    **Step 1:** Select a landmark or location.
+
+    **Step 2:** Enter a search radius in kilometers.
+
+    **Step 3:** The system finds properties within that radius.
+
+    **Step 4:** Select a property that interests you.
+
+    **Step 5:** Our AI recommends similar properties based on:
+    - Location advantages
+    - Price characteristics
+    - Amenities and facilities
+    - Sector information
+
+    The higher the similarity score, the closer the match.
+    """)
+
 @st.cache_data
 def load_location_df():
     with open('pickle_files\location_df.pkl','rb') as file:

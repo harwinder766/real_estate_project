@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("🏠 Real Estate Intelligence Platform")
+st.title("🏠 Real Estate Intelligence Platform for Gurgaon")
 st.markdown("""
 ### AI-Powered Property Valuation, Analytics & Recommendations
 
@@ -9,23 +9,6 @@ Explainable AI, and Recommendation Systems to help users estimate property
 prices, explore market insights, discover similar properties, and understand
 the reasoning behind every prediction.
 """)
-
-# col1, col2, col3, col4 = st.columns(4)
-
-# with col1:
-#     st.metric("Properties", "250+")
-
-# with col2:
-#     st.metric("Sectors Covered", "120+")
-
-# with col3:
-#     st.metric("ML Model", "XGBoost")
-
-# with col4:
-#     st.metric("Modules", "4")
-
-# st.divider()
-
 st.header("🚀 Platform Features")
 
 col1, col2 = st.columns(2)

@@ -10,8 +10,6 @@ import plotly.figure_factory as ff
 
 st.set_page_config(page_title="Plotting Demo")
 
-st.title('Analytics')
-
 @st.cache_data
 def load_dataset_1():
     with open('pickle_files\data_for_analytic_module.pkl','rb') as file:
