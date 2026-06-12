@@ -27,29 +27,29 @@ with st.expander("ℹ️ How does this recommendation system work?"):
 
 @st.cache_data
 def load_location_df():
-    with open('pickle_files\location_df.pkl','rb') as file:
+    with open('pickle_files/location_df.pkl','rb') as file:
         location_df = pickle.load(file)
     return location_df
 
 @st.cache_data
 def load_link_df():
-    with open('pickle_files\link_df.pkl','rb') as file:
+    with open('pickle_files/link_df.pkl','rb') as file:
         link_df = pickle.load(file)
     return link_df
 
 @st.cache_data
 def load_pricedetails():
-    with open('pickle_files\cosine_sim_pricedetails.pkl','rb') as file:
+    with open('pickle_files/cosine_sim_pricedetails.pkl','rb') as file:
         cosine_sim_pricedetails = pickle.load(file)
     return cosine_sim_pricedetails
 @st.cache_data
 def load_facilities():
-    with open('pickle_files\cosine_sim_facilities.pkl','rb') as file:
+    with open('pickle_files/cosine_sim_facilities.pkl','rb') as file:
         cosine_sim_facilities = pickle.load(file)
     return cosine_sim_facilities
 @st.cache_data
 def load_location():
-    with open('pickle_files\cosine_sim_location.pkl','rb') as file:
+    with open('pickle_files/cosine_sim_location.pkl','rb') as file:
         cosine_sim_facilities = pickle.load(file)
     return cosine_sim_facilities
 

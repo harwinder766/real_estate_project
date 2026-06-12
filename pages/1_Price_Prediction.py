@@ -7,13 +7,13 @@ st.set_page_config(page_title='Price Prediction')
 
 @st.cache_data
 def load_dataset():
-    with open('pickle_files\df_new.pkl','rb') as file:
+    with open('pickle_files/df_new.pkl','rb') as file:
         df = pickle.load(file)
     return df
 
 @st.cache_resource
 def load_model():
-    with open('pickle_files\pipeline_new.pkl','rb') as file:
+    with open('pickle_files/pipeline_new.pkl','rb') as file:
         pipeline = pickle.load(file)
     return pipeline
 

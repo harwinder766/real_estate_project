@@ -11,13 +11,13 @@ if 'one_df' not in st.session_state:
 st.header('Inference Module')
 @st.cache_data
 def load_pipeline():
-    with open('pickle_files\pipeline_new.pkl','rb') as f:
+    with open('pickle_files/pipeline_new.pkl','rb') as f:
         pipeline = pickle.load(f)
         return pipeline
 
 @st.cache_data
 def load_df_new():
-    with open('pickle_files\df_new.pkl','rb') as f:
+    with open('pickle_files/df_new.pkl','rb') as f:
       df_new = pickle.load(f)
     return df_new
 

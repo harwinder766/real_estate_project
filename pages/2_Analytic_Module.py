@@ -12,7 +12,7 @@ st.set_page_config(page_title="Plotting Demo")
 
 @st.cache_data
 def load_dataset_1():
-    with open('pickle_files\data_for_analytic_module.pkl','rb') as file:
+    with open('pickle_files/data_for_analytic_module.pkl','rb') as file:
         df = pickle.load(file)
     return df
 
@@ -56,7 +56,7 @@ st.header("Top Amenities in Selected Sector")
 
 @st.cache_data
 def load_dataset_2():
-    with open('pickle_files\wordcloud_df.pkl','rb') as file:
+    with open('pickle_files/wordcloud_df.pkl','rb') as file:
         df = pickle.load(file)
     return df
 
