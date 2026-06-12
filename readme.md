@@ -121,24 +121,33 @@ Performance:
 ## 📂 Project Structure
 
 ```text
-real_estate_project/
+REAL_ESTATE_PROJECT/
+│
+├── home.py                           # Home/Landing page
+├── requirements.txt                  # Project dependencies
+├── README.md                         # Project documentation
+├── .gitignore
 │
 ├── pages/
-│   ├── 1_Price_Prediction.py
-│   ├── 2_Analytic_Module.py
-│   ├── 3_Recommendation_System.py
-│   └── 4_Inference_Module.py
+│   ├── 1_Price_Prediction.py         # Property price prediction module
+│   ├── 2_Analytic_Module.py          # Real estate analytics dashboard
+│   ├── 3_Recommendation_System.py    # Property recommendation engine
+│   └── 4_Inference_Module.py         # SHAP-based model explanations
 │
-├── pipeline.pkl
-├── df.pkl
-├── location_df.pkl
-├── cosine_sim_facilities.pkl
-├── cosine_sim_location.pkl
-├── cosine_sim_pricedetails.pkl
-│
-├── requirements.txt
-├── README.md
-└── Home.py
+├── pickle_files/
+   ├── pipeline_new.pkl              # Trained XGBoost pipeline
+   ├── df_new.pkl                    # Processed property dataset
+   ├── location_df.pkl               # Location-distance matrix
+   ├── link_df.pkl                   # Property listing links
+   ├── wordcloud_df.pkl              # Word cloud data
+   │
+   ├── cosine_sim_facilities.pkl     # Facilities similarity matrix
+   ├── cosine_sim_location.pkl       # Location similarity matrix
+   ├── cosine_sim_pricedetails.pkl   # Price similarity matrix
+   │
+   └── data_for_analytic_module.pkl  # Analytics dataset
+
+```
 ```
 
 ---
