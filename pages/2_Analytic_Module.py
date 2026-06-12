@@ -5,7 +5,6 @@ import pickle
 from wordcloud import WordCloud
 import ast
 import matplotlib.pyplot as plt
-import seaborn as sns
 import plotly.figure_factory as ff
 
 st.set_page_config(page_title="Plotting Demo")
